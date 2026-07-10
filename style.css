@@ -149,3 +149,314 @@ button{
     margin-bottom:15px;
 
 }
+.search-section{
+
+    padding:70px 10%;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.search-section h2{
+
+    font-size:40px;
+
+    color:#0d47a1;
+
+    margin-bottom:30px;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.search-box input{
+
+    width:450px;
+
+    max-width:90%;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    border:2px solid #ddd;
+
+    font-size:18px;
+
+}
+
+.search-box button{
+
+    padding:16px 35px;
+
+}
+
+.popular{
+
+    padding:80px 8%;
+
+    background:#f5f7fb;
+
+}
+
+.popular h2{
+
+    text-align:center;
+
+    color:#0d47a1;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+
+}
+
+.destination-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.destination-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.destination-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.destination-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.destination-card h3{
+
+    padding:18px;
+
+    color:#0d47a1;
+
+}
+
+.destination-card p{
+
+    padding:0 18px 22px;
+
+    color:#555;
+
+}
+/* ===========================
+   DESTINATIONS PAGE
+=========================== */
+
+.destinations-page{
+    padding:60px 8%;
+    background:#f5f8fc;
+    min-height:100vh;
+}
+
+.destinations-page h1{
+    text-align:center;
+    font-size:42px;
+    color:#1e3c72;
+    margin-bottom:50px;
+}
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    text-align:center;
+    margin-top:18px;
+    color:#1e3c72;
+}
+
+.card p{
+    text-align:center;
+    color:#666;
+    padding:10px 20px;
+}
+
+.card button{
+    display:block;
+    margin:20px auto 25px;
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.card button:hover{
+    background:#e68900;
+}
+/* ===========================
+GOA PAGE
+=========================== */
+
+.place-hero{
+    background:url("https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1400") center/cover;
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.place-hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.place-hero p{
+    font-size:24px;
+    width:70%;
+}
+
+.place-info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:60px 8%;
+}
+
+.info-box{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.info-box h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+}
+
+.info-box ul{
+    padding-left:20px;
+}
+
+.back-btn{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.back-btn button{
+    background:#1e3c72;
+    color:white;
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.back-btn button:hover{
+    background:#15305c;
+}
+/* ================= DESTINATIONS PAGE ================= */
+
+.destinations-page{
+    padding:60px 8%;
+    background:#f5f7fa;
+    min-height:100vh;
+}
+
+.destinations-page h1{
+    text-align:center;
+    color:#0047ab;
+    margin-bottom:40px;
+}
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:15px 20px 5px;
+    color:#0047ab;
+}
+
+.card p{
+    padding:0 20px 20px;
+    color:#555;
+    line-height:1.6;
+}
