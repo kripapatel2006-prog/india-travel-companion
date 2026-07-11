@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Trip Planner</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trip Planner | India Travel Companion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<h1>Trip Planner</h1>
+<header class="navbar">
+
+    <div class="logo">
+        🇮🇳 India Travel Companion
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations/index.html">Destinations</a>
+        <a href="planner.html">Trip Planner</a>
+        <a href="checklist.html">Checklist</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section class="planner">
+
+    <h1>🧳 Trip Budget Planner</h1>
+
+    <p>Estimate your travel budget in seconds.</p>
+
+    <label>Select Destination</label>
+
+    <select id="destination">
+
+        <option>Goa</option>
+        <option>Kerala</option>
+        <option>Ladakh</option>
+        <option>Jaipur</option>
+
+    </select>
+
+    <label>Number of Days</label>
+
+    <input
+        type="number"
+        id="days"
+        min="1"
+        placeholder="Enter number of days">
+
+    <button onclick="calculateBudget()">
+        Calculate Budget
+    </button>
+
+    <h2 id="result"></h2>
+
+    <hr style="margin:40px 0;">
+
+    <h2>🌤 Live Weather</h2>
+
+    <p>Check the current weather for your selected destination.</p>
+
+    <button onclick="getWeather()">
+        Show Weather
+    </button>
+
+    <div id="weatherResult"></div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>🇮🇳 India Travel Companion</h2>
+
+        <p>Helping travellers explore India's beautiful destinations.</p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="destinations/index.html">Destinations</a>
+
+            <a href="planner.html">Trip Planner</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Kripa Patel
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
