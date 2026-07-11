@@ -48,16 +48,16 @@ nav li{
 
 }
 
-    nav a{
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: 500;
-    transition: 0.3s ease;
+ nav a{
+    color:#222;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s ease;
 }
 
 nav a:hover{
-    color: #0d6efd;
+    color:#0d6efd;
 }
 .hero{
 
@@ -599,4 +599,137 @@ TRIP PLANNER
     font-size:18px;
     text-align:center;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+    .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:white;
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .features {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .place-hero h1 {
+        font-size: 40px;
+    }
+
+    .place-hero p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .planner {
+        padding: 40px 20px;
+    }
+
+    .planner input,
+    .planner select,
+    .planner button {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+}
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px) {
+
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    nav a{
+        margin: 8px 0;
+    }
+
+    .hero h1{
+        font-size: 34px;
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+    .hero{
+        height: auto;
+        padding: 70px 20px;
+    }
+
+    .search-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input{
+        width: 100%;
+    }
+
+    button{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .features,
+    .destination-container,
+    .destination-grid,
+    .place-info{
+        padding: 20px;
+    }
+
 }
