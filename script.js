@@ -2,14 +2,20 @@ const exploreBtn = document.getElementById("exploreBtn");
 const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInput");
 
-// Explore button
+// ===============================
+// Explore Button
+// ===============================
+
 if (exploreBtn) {
     exploreBtn.addEventListener("click", () => {
         window.location.href = "destinations/index.html";
     });
 }
 
-// Search button
+// ===============================
+// Search Button
+// ===============================
+
 if (searchBtn) {
     searchBtn.addEventListener("click", () => {
 
@@ -38,54 +44,62 @@ if (searchBtn) {
 
     });
 }
-function calculateBudget(){
 
-    const destination=document.getElementById("destination").value;
+// ===============================
+// Budget Calculator
+// ===============================
 
-    const days=parseInt(document.getElementById("days").value);
+function calculateBudget() {
 
-    if(!days || days<=0){
+    const destination = document.getElementById("destination").value;
+    const days = parseInt(document.getElementById("days").value);
 
-        document.getElementById("result").innerHTML="Please enter valid days.";
-
+    if (!days || days <= 0) {
+        document.getElementById("result").innerHTML = "Please enter valid days.";
         return;
-
     }
 
-    let costPerDay=0;
+    let costPerDay = 0;
 
-    switch(destination){
+    switch (destination) {
 
         case "Goa":
-            costPerDay=4000;
+            costPerDay = 4000;
             break;
 
         case "Kerala":
-            costPerDay=3500;
+            costPerDay = 3500;
             break;
 
         case "Ladakh":
-            costPerDay=6000;
+            costPerDay = 6000;
             break;
 
         case "Jaipur":
-            costPerDay=3000;
+            costPerDay = 3000;
             break;
 
     }
 
-    const total=days*costPerDay;
+    const total = days * costPerDay;
 
-    document.getElementById("result").innerHTML=
-    `Estimated Budget: ₹${total.toLocaleString("en-IN")}`;
+    document.getElementById("result").innerHTML =
+        `Estimated Budget: ₹${total.toLocaleString("en-IN")}`;
 
 }
+
+// ===============================
+// Weather API
+// ===============================
+
 async function getWeather() {
+
     const destination = document.getElementById("destination").value;
 
     let city = "";
 
     switch (destination) {
+
         case "Goa":
             city = "Panaji";
             break;
@@ -101,6 +115,7 @@ async function getWeather() {
         case "Jaipur":
             city = "Jaipur";
             break;
+
     }
 
     const apiKey = "5670e676f8741adfa97b4189caec3dff";
@@ -112,9 +127,7 @@ async function getWeather() {
         const response = await fetch(url);
         const data = await response.json();
 
-        console.log(data);
-
-        if (data.cod === 200) {
+        if (Number(data.cod) === 200) {
 
             document.getElementById("weatherResult").innerHTML = `
                 <h3>🌤 Weather in ${data.name}</h3>
@@ -133,13 +146,36 @@ async function getWeather() {
 
     } catch (error) {
 
-        console.error(error);
-
         document.getElementById("weatherResult").innerHTML =
             "Unable to fetch weather.";
 
     }
 
 }
-    
 
+// ===============================
+// Checklist Local Storage
+// ===============================
+
+const checkboxes = document.querySelectorAll(".checklist-box input");
+
+checkboxes.forEach((checkbox, index) => {
+
+    if (localStorage.getItem("item" + index) === "true") {
+        checkbox.checked = true;
+    }
+
+    checkbox.addEventListener("change", () => {
+        localStorage.setItem("item" + index, checkbox.checked);
+    });
+
+});
+
+function clearChecklist() {
+
+    checkboxes.forEach((checkbox, index) => {
+        checkbox.checked = false;
+        localStorage.removeItem("item" + index);
+    });
+
+}

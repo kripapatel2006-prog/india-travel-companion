@@ -733,3 +733,55 @@ TRIP PLANNER
     }
 
 }
+/* ==========================
+   CHECKLIST PAGE
+========================== */
+
+.checklist{
+    max-width:700px;
+    margin:50px auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    text-align:center;
+}
+
+.checklist h1{
+    color:#0d47a1;
+    margin-bottom:10px;
+}
+
+.checklist p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.checklist-box{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    text-align:left;
+}
+
+.checklist-box label{
+    font-size:18px;
+    padding:12px 15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.checklist-box label:hover{
+    background:#f5f7fb;
+}
+
+.checklist-box input{
+    margin-right:12px;
+    transform:scale(1.3);
+}
+
+.checklist button{
+    margin-top:30px;
+}
