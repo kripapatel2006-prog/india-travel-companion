@@ -785,3 +785,165 @@ TRIP PLANNER
 .checklist button{
     margin-top:30px;
 }
+/* ===============================
+   DARK MODE
+================================ */
+
+/* Dark Mode Button */
+#themeToggle{
+    margin-left:20px;
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    background:#0d6efd;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+#themeToggle:hover{
+    background:#084298;
+}
+
+/* Dark Theme */
+
+body.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+body.dark-mode .navbar{
+    background:#1f1f1f;
+}
+
+body.dark-mode .card,
+body.dark-mode .info-box,
+body.dark-mode .checklist,
+body.dark-mode .planner,
+body.dark-mode .footer{
+    background:#222;
+    color:white;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label{
+    color:white;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea{
+    background:#333;
+    color:white;
+    border:1px solid #666;
+}
+
+body.dark-mode nav a{
+    color:white;
+}
+
+body.dark-mode #themeToggle{
+    background:#ff9800;
+}
+/* Fix text colors in Dark Mode */
+
+body.dark-mode .card h2,
+body.dark-mode .card p,
+body.dark-mode .destination-card h3,
+body.dark-mode .destination-card p,
+body.dark-mode .info-box h2,
+body.dark-mode .info-box p,
+body.dark-mode .info-box li,
+body.dark-mode #result,
+body.dark-mode #weatherResult,
+body.dark-mode .footer p{
+    color:#ffffff !important;
+}
+body.dark-mode button{
+    background:#ff9800;
+    color:white;
+}
+
+body.dark-mode button:hover{
+    background:#e68900;
+}
+/* Famous Food Places */
+
+.info-box ul li{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.info-box b{
+    color:#0d47a1;
+    font-size:17px;
+}
+/* =====================================
+   Famous Food Places
+===================================== */
+
+.food-section{
+    width:85%;
+    margin:50px auto;
+}
+
+.food-section h2{
+    text-align:center;
+    color:#0d47a1;
+    font-size:36px;
+    margin-bottom:35px;
+}
+
+.food-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.restaurant-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.restaurant-card:hover{
+    transform:translateY(-8px);
+}
+
+.restaurant-card h3{
+    color:#0d47a1;
+    margin-bottom:15px;
+}
+
+.restaurant-card p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.restaurant-card a{
+    text-decoration:none;
+}
+
+.restaurant-card button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.restaurant-card button:hover{
+    background:#084298;
+}
