@@ -984,27 +984,72 @@ body.dark-mode button:hover{
 /* ==========================
    SCROLL TO TOP BUTTON
 ========================== */
-
 #topBtn{
     display:none;
     position:fixed;
     bottom:25px;
     right:25px;
-    z-index:999;
+    width:55px;
+    height:55px;
     border:none;
-    outline:none;
-    background:#0d6efd;
-    color:white;
-    cursor:pointer;
-    width:50px;
-    height:50px;
     border-radius:50%;
-    font-size:22px;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-    transition:.3s;
+    background:#ff9800;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+    z-index:999;
+    transition:0.3s;
+    padding:0;
+    margin:0;
 }
 
 #topBtn:hover{
-    background:#084298;
+    background:#e68900;
     transform:scale(1.1);
+}
+/* ==========================
+   MOBILE RESPONSIVE NAVBAR
+========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+        padding:20px;
+    }
+
+    .logo{
+        margin-bottom:15px;
+        text-align:center;
+        font-size:28px;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+        padding:0;
+    }
+
+    nav a{
+        margin:0;
+        padding:8px 12px;
+        font-size:16px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
 }
