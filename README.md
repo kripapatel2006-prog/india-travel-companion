@@ -1,22 +1,24 @@
 # 🇮🇳 India Travel Companion
 
-A responsive travel guide website built using HTML, CSS, and JavaScript to help users explore popular tourist destinations across India.
-
-## 🌐 Live Demo
-
-https://kripapatel2006-prog.github.io/india-travel-companion/
-
----
+A responsive travel guide website built using HTML, CSS, and JavaScript that helps users explore popular Indian destinations, estimate travel budgets, check live weather, and plan their trips efficiently.
 
 ## ✨ Features
 
-- 🏖️ Destination guides for Goa, Kerala, Ladakh and Jaipur
+- 🏖️ Explore popular Indian destinations
 - 🔍 Search destinations
-- 🧳 Trip Planner
-- ✅ Travel Checklist
-- 📱 Responsive design
-- 🎨 Clean and modern interface
-- 🌐 Hosted using GitHub Pages
+- 💰 Trip Budget Calculator
+- 🌤️ Live Weather using OpenWeather API
+- ✅ Travel Checklist with Local Storage
+- 🍽️ Famous Food Places with Google Maps links
+- 📍 Destination details including:
+  - Best Time to Visit
+  - Average Budget
+  - Must Try Food
+  - Top Attractions
+  - Local Transport
+  - Travel Tips
+- ⬆️ Scroll to Top button
+- 📱 Responsive Design for mobile and desktop
 
 ---
 
@@ -24,7 +26,8 @@ https://kripapatel2006-prog.github.io/india-travel-companion/
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
+- OpenWeather API
 - Git
 - GitHub
 - GitHub Pages
@@ -37,11 +40,11 @@ https://kripapatel2006-prog.github.io/india-travel-companion/
 India-Travel-Companion/
 │
 ├── index.html
-├── style.css
-├── script.js
 ├── planner.html
 ├── checklist.html
 ├── contact.html
+├── style.css
+├── script.js
 │
 └── destinations/
     ├── index.html
@@ -53,22 +56,42 @@ India-Travel-Companion/
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Live Demo
 
-- Live Weather API
-- Budget Calculator
-- Interactive Map
-- Dark Mode
-- Favorite Destinations
-- Travel Reviews
-- Image Gallery
+Add your GitHub Pages link here.
+
+Example:
+
+https://yourusername.github.io/India-Travel-Companion/
 
 ---
 
-## 👩‍💻 Developed By
+## 📸 Screenshots
+
+(Add screenshots later.)
+
+---
+
+## 👩‍💻 Author
 
 **Kripa Patel**
 
 Computer Science Engineering (Data Science)
 
 Vignana Bharathi Institute of Technology
+
+---
+
+## ⭐ Future Improvements
+
+- Nearby Hotels
+- Travel Itinerary
+- Better Mobile Navigation
+- More Destinations
+- AI-based Travel Recommendations
+
+---
+
+## 📄 License
+
+This project is for learning and portfolio purposes.
