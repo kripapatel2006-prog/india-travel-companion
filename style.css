@@ -1080,4 +1080,52 @@ body.dark-mode button:hover{
         font-size:22px;
     }
 
+}/* ==========================
+   HAMBURGER MENU
+========================== */
+
+.menu-icon{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Mobile View */
+
+@media (max-width:768px){
+
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+        position:sticky;
+        top:0;
+    }
+
+    .logo{
+        font-size:22px;
+        font-weight:bold;
+    }
+
+    .menu-icon{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        margin-top:15px;
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    nav a{
+        margin:12px 0;
+    }
+
 }
