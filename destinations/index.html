@@ -1,94 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | India Travel Companion</title>
+
     <link rel="stylesheet" href="../style.css">
-</head>
-
-<link rel="stylesheet" href="../style.css">
-
 </head>
 
 <body>
 
 <header class="navbar">
 
-<div class="logo">
-<h2>🇮🇳 India Travel Companion</h2>
-</div>
+    <div class="logo">
+        🇮🇳 India Travel Companion
+    </div>
 
-<nav>
-<a href="../index.html">Home</a>
-<a href="#">Destinations</a>
-<a href="../planner.html">Trip Planner</a>
-<a href="../checklist.html">Checklist</a>
-<a href="../contact.html">Contact</a>
-</nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="navMenu">
+        <a href="../index.html">Home</a>
+        <a href="#">Destinations</a>
+        <a href="../planner.html">Trip Planner</a>
+        <a href="../checklist.html">Checklist</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
 
 </header>
 
 <section class="destinations-page">
 
-<h1>Popular Destinations</h1>
+    <h1>Popular Destinations</h1>
 
-<div class="destination-grid">
+    <div class="destination-grid">
 
-<div class="card">
+        <!-- Goa -->
 
-<img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800">
+        <div class="card">
 
-<h2>Goa</h2>
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80" alt="Goa">
 
-<p>Beaches • Nightlife • Water Sports</p>
+            <h2>Goa</h2>
 
-<a href="goa.html">
-<a href="goa.html">
-    <button>Explore</button>
-</a>
+            <p>Beaches • Nightlife • Water Sports</p>
 
-</div>
+            <a href="goa.html">
+                <button>Explore</button>
+            </a>
 
-<div class="card">
+        </div>
 
-<img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=700&q=80">
+        <!-- Kerala -->
 
-<h2>Kerala</h2>
+        <div class="card">
 
-<p>Backwaters • Tea Gardens • Houseboats</p>
+            <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=700&q=80" alt="Kerala">
 
-<button>Explore</button>
+            <h2>Kerala</h2>
 
-</div>
+            <p>Backwaters • Tea Gardens • Houseboats</p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=700&q=80">
+            <a href="kerala.html">
+                <button>Explore</button>
+            </a>
 
-<h2>Ladakh</h2>
+        </div>
 
-<p>Mountains • Adventure • Lakes</p>
+        <!-- Ladakh -->
 
-<button>Explore</button>
+        <div class="card">
 
-</div>
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80" alt="Ladakh">
 
-<div class="card">
+            <h2>Ladakh</h2>
 
-<img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800">
+            <p>Mountains • Adventure • Lakes</p>
 
-<h2>Jaipur</h2>
+            <a href="ladakh.html">
+                <button>Explore</button>
+            </a>
 
-<p>Palaces • Heritage • Culture</p>
+        </div>
 
-<button>Explore</button>
+        <!-- Jaipur -->
 
-</div>
+        <div class="card">
 
-</div>
+            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=700&q=80" alt="Jaipur">
+
+            <h2>Jaipur</h2>
+
+            <p>Palaces • Heritage • Culture</p>
+
+            <a href="jaipur.html">
+                <button>Explore</button>
+            </a>
+
+        </div>
+
+        <!-- Manali -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80" alt="Manali">
+
+            <h2>Manali</h2>
+
+            <p>Snow • Mountains • Adventure</p>
+
+            <a href="manali.html">
+                <button>Explore</button>
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
+
 <button id="topBtn" onclick="scrollToTop()">↑</button>
+
 <script src="../script.js"></script>
 
 </body>

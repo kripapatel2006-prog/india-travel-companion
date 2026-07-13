@@ -38,6 +38,9 @@ if (searchBtn) {
         else if (place === "jaipur") {
             window.location.href = "destinations/jaipur.html";
         }
+        else if (place === "manali") {
+            window.location.href = "destinations/manali.html";
+       }
         else {
             alert("Destination not found!");
         }
@@ -79,6 +82,10 @@ function calculateBudget() {
             costPerDay = 3000;
             break;
 
+        case "Manali":
+            costPerDay = 5000;
+            break;
+
     }
 
     const total = days * costPerDay;
@@ -115,7 +122,9 @@ async function getWeather() {
         case "Jaipur":
             city = "Jaipur";
             break;
-
+        case "Manali":
+            city = "Manali";
+             break;
     }
 
     const apiKey = "5670e676f8741adfa97b4189caec3dff";

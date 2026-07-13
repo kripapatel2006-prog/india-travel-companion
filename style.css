@@ -340,6 +340,12 @@ a{
     background-size:cover;
     background-position:center;
 }
+.manali-hero{
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
 
 .place-hero h1{
     font-size:52px;
