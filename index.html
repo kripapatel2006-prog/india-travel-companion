@@ -5,34 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>India Travel Companion</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
+
     <div class="logo">
         🇮🇳 India Travel Companion
     </div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="destinations/index.html">Destinations</a></li>
-            <li><a href="planner.html">Trip Planner</a></li>
-            <li><a href="checklist.html">Checklist</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="destinations/index.html">Destinations</a>
+        <a href="planner.html">Trip Planner</a>
+        <a href="checklist.html">Checklist</a>
+        <a href="contact.html">Contact</a>
     </nav>
+
 </header>
 
 <section class="hero">
+
     <div class="hero-content">
+
         <h1>Discover Incredible India</h1>
 
         <p>
@@ -42,7 +48,9 @@
         <button id="exploreBtn">
             Explore Destinations
         </button>
+
     </div>
+
 </section>
 
 <section class="features">
@@ -69,15 +77,16 @@
     <h2>Find Your Next Destination</h2>
 
     <div class="search-box">
+
         <input
             type="text"
             id="searchInput"
-            placeholder="Search destinations like Goa, Kerala, Ladakh..."
-        >
+            placeholder="Search destinations like Goa, Kerala, Ladakh...">
 
         <button id="searchBtn">
             Search
         </button>
+
     </div>
 
 </section>
@@ -115,6 +124,7 @@
     </div>
 
 </section>
+
 <footer class="footer">
 
     <div class="footer-content">
@@ -122,8 +132,7 @@
         <h2>🇮🇳 India Travel Companion</h2>
 
         <p>
-            Helping travellers explore India's most beautiful destinations with
-            confidence.
+            Helping travellers explore India's most beautiful destinations with confidence.
         </p>
 
         <div class="footer-links">
@@ -143,7 +152,9 @@
     </div>
 
 </footer>
+
 <button id="topBtn" onclick="scrollToTop()">↑</button>
+
 <script src="script.js"></script>
 
 </body>

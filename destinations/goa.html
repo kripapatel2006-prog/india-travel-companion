@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +14,14 @@
 <header class="navbar">
 
     <div class="logo">
-        <h2>🇮🇳 India Travel Companion</h2>
+        🇮🇳 India Travel Companion
     </div>
 
-    <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="navMenu">
         <a href="../index.html">Home</a>
         <a href="index.html">Destinations</a>
         <a href="../planner.html">Trip Planner</a>
@@ -26,7 +31,7 @@
 
 </header>
 
-<section class="place-hero">
+<section class="place-hero goa-hero">
 
     <h1>🏖️ Goa</h1>
 
@@ -83,8 +88,6 @@
 
 </section>
 
-<!-- Famous Food Places -->
-
 <section class="food-section">
 
     <h2>🍽️ Famous Food Places to Try</h2>
@@ -92,51 +95,39 @@
     <div class="food-grid">
 
         <div class="restaurant-card">
-
             <h3>📍 Ritz Classic, Panaji</h3>
-
             <p>⭐ Famous for Goan Fish Curry & Traditional Thali.</p>
 
             <a href="https://www.google.com/maps/search/?api=1&query=Ritz+Classic+Panaji" target="_blank">
                 <button>📍 Open in Google Maps</button>
             </a>
-
         </div>
 
         <div class="restaurant-card">
-
             <h3>📍 Mum's Kitchen</h3>
-
             <p>⭐ Authentic Goan Cuisine & Seafood.</p>
 
             <a href="https://www.google.com/maps/search/?api=1&query=Mums+Kitchen+Goa" target="_blank">
                 <button>📍 Open in Google Maps</button>
             </a>
-
         </div>
 
         <div class="restaurant-card">
-
             <h3>📍 Martin's Corner</h3>
-
             <p>⭐ Famous for Fresh Seafood & Prawn Balchão.</p>
 
             <a href="https://www.google.com/maps/search/?api=1&query=Martins+Corner+Goa" target="_blank">
                 <button>📍 Open in Google Maps</button>
             </a>
-
         </div>
 
         <div class="restaurant-card">
-
             <h3>📍 Vinayak Family Restaurant</h3>
-
             <p>⭐ Budget-friendly Local Goan Food.</p>
 
             <a href="https://www.google.com/maps/search/?api=1&query=Vinayak+Family+Restaurant+Goa" target="_blank">
                 <button>📍 Open in Google Maps</button>
             </a>
-
         </div>
 
     </div>
@@ -150,6 +141,7 @@
     </a>
 
 </div>
+
 <button id="topBtn" onclick="scrollToTop()">↑</button>
 
 <script src="../script.js"></script>
