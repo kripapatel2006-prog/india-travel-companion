@@ -610,7 +610,8 @@ TRIP PLANNER
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 8%;
+    flex-wrap:wrap;
+    padding:15px 8%;
     background:white;
     box-shadow:0 3px 12px rgba(0,0,0,0.08);
     position:sticky;
@@ -1050,6 +1051,33 @@ body.dark-mode button:hover{
 
     .hero p{
         font-size:18px;
+    }
+
+}
+/* ==========================
+   MOBILE RESPONSIVE NAVBAR
+========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav a{
+        margin:0;
+        font-size:22px;
     }
 
 }
